@@ -1,8 +1,25 @@
-<header>
-	<nav>
-		<a href="/" class="logo">
-			<img src="/logo.png" alt="Peak Rock Communications logo" />
-		</a>
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+
+		<main>
+			<h1>Peak Rock Communication Services</h1>
+
+			<p>
+				My name is Alister, and I am a vanlifer, with 15 years of experience in the telecommunications and networking world. Due to my lifestyle, I am uniquely placed to reach all areas of the UK and Europe  to assist my customers with overhauling and renewing their network infrastructure. <br />
+				I provide new installation and refurbishment of internet networks.
+			</p>
 
 		<div class="nav-links">
 			<a href="#services">Services</a>
